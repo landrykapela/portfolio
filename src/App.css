@@ -1,33 +1,914 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* styling for smaller screens */
+@media screen and (max-width: 878px){
+  .App {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: url(building.jpg);
+    background-size: cover;
   }
+  .hidden{
+    display: none;
+  }
+  .tree-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    padding: 1em;
+    list-style:none;
+    margin-bottom: 2em;
+  }
+  .nav-branch{
+    display: flex;
+    color: white;
+    padding: 1em .5em 1em .5em;
+    margin: 0.5em;
+    border: 1px solid white;
+    font-size: 1em;
+    font-family: Raleway,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+  }
+  .branch-focused{
+    text-transform: uppercase;
+  }
+  .branch-active{
+    border: 2px solid white;
+  }
+  .nav-branch .first{
+  padding: .5em;
+
+  }
+  .nav-branch .last{
+  padding: 0.5em;
+
+  }
+  .contact-content{
+    position:relative;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .contact-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .contact-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contact-item i{
+    font-size: 1em;
+    padding-right: 1em;
+  }
+  .contact-card{
+    width: 70vw;
+    background-color: orange;
+    border: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+  .contact-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 0.5px solid black;
+    padding: 2em;
+  }
+  .contact-card-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+  }
+  .contact-card-name i{
+    font-size: 3em;
+    color: white;
+  }
+  .work-content{
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+  }
+  .work-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: black;
+    padding: 1em;
+  }
+  .work-item{
+    margin: 2em;
+  }
+  .work-item a:link, .work-cotent a:visited, .work-content a:hover{
+    text-decoration: none;
+  }
+  .work-content a img{
+    width:200px;
+    max-height: 240px;
+    cursor: pointer;
+  }
+  .biography{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: black;
+  }
+  .bio-content{
+    background-color: black;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 2em;
+    color: white;
+  }
+  .bio-summary{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #navigator{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .biography h1,h2,h3{
+    font-family: Montserrat,sans-serif;
+    color: white;
+    padding: 1em;
+  }
+  .details-item{
+    margin:2vh 2vw;
+    padding: 3em 2em;
+    border-bottom: 1px dashed white;
+  }
+  .skill-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    padding:1em;
+  }
+  .skill{
+    margin: .5em;
+    padding: .5em;
+    border: 1px solid red;
+  }
+  .content-main{
+    position:relative;
+    top:10px;
+    width: 70vw;
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em;
+    height:auto;
+
+  }
+  .content-main h1,h2{
+    font-family: 'Exo 2',sans-serif;
+  }
+  .content-main h3,h4{
+    font-family: 'Raleway',sans-serif;
+  }
+
+  #humberger{
+    z-index: 10000;
+    position: fixed;
+    top:2.5vh;
+    left:2.5vw;
+    font-size:1.2em;
+    background-color: black;
+  }
+  .nav{
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    margin: 0 auto;
+    display:none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+  }
+  .nav-item{
+    border: 1px solid white;
+    padding: .3em 0 .3em 0;
+    color: white;
+    cursor: pointer;
+    margin:1em;
+    font-size: 1em;
+    width: 55vw;
+  }
+  .active{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .active .focused{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .focused{
+    border: 1px solid black;
+    color: black;
+    background-color: orange;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+}
+
+
+/* styles for larger screens */
+@media screen and (min-width: 879px){
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+  }
+  #humberger{
+    display: none;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: url(building.jpg);
+    background-size: cover;
+  }
+  .hidden{
+    display: none;
+  }
+  .tree-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-left: 2px solid white;
+    padding: 2em;
+    list-style:none;
+    margin-right: 2em;
+  }
+  .nav-branch{
+    display: block;
+    color: white;
+    padding: 1em .5em 1em .5em;
+    text-align: left;
+    margin-left: 3em;
+    border-left: 1px solid white;
+    font-size: 1.5em;
+    font-family: Raleway,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  .branch-focused{
+    text-transform: uppercase;
+  }
+  .branch-active{
+    border-left: 0px;
+    border-top: 1px solid white;
+    border-right: 2px double white;
+    border-bottom: 2px double white;
+    text-transform: uppercase;
+  }
+  .nav-branch .first{
+  padding: .5em 1em 2em 1em;
+  }
+  .nav-branch .last{
+  padding: 2em 1em 0.5em 1em;
+
+  }
+  .contact-content{
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .contact-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: white;
+    padding-left: 2em;
+  }
+  .contact-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contact-item i{
+    font-size: 1.5em;
+    padding-right: 1em;
+  }
+  .contact-card{
+    width: 50vw;
+    background-color: orange;
+    opacity: 0.5;
+    border: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+  }
+  .contact-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-left: 0.5px solid black;
+    padding: 2em;
+  }
+  .contact-card-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+  }
+  .contact-card-name i{
+    font-size: 3em;
+    color: white;
+  }
+  .work-content{
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height:95vh;
+  }
+  .work-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .work-content #top-band{
+    display:block;
+    height:5vh;
+    background-color: black;
+    width:100%;
+    margin-bottom: 5vh;
+  }
+  .work-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: orange;
+    padding-left: 2em;
+  }
+  .work-item{
+    margin: 2em;
+  }
+  .work-item a:link, .work-cotent a:visited, .work-content a:hover{
+    text-decoration: none;
+  }
+  .work-content a img{
+    width:200px;
+    max-height: 240px;
+  }
+  .biography{
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    min-height:90vh;
+    background-color: orange;
+    color: black;
+  }
+  .bio-content{
+    background-color: black;
+    margin-right: 5vh;
+    opacity: 0.5;
+    text-align: center;
+    margin-left: 2em;
+    color: white;
+  }
+  .bio-summary{
+    background-color: orange;
+    text-align: left;
+  }
+
+  .biography h1,h2,h3{
+    font-family: Montserrat,sans-serif;
+    color: white;
+    padding-left: 2em;
+  }
+  .details-item{
+    margin:2vh 2vw;
+    padding: 3em 2em;
+    border-bottom: 1px dashed white;
+  }
+  .skill-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    padding:1em;
+  }
+  .skill{
+    margin: .5em;
+    padding: .5em;
+    border: 1px solid red;
+  }
+  .content-main{
+    position:relative;
+    width: 60vw;
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 2em;
+  }
+  .content-main h1,h2{
+    font-family: 'Exo 2',sans-serif;
+  }
+  .content-main h3,h4{
+    font-family: 'Raleway', sans-serif;
+  }
+  .nav{
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+  }
+  .nav-item{
+    border: 1px solid white;
+    padding: .3em 1em .3em 1em;
+    color: white;
+    cursor: pointer;
+    margin:1em;
+    font-size: 0.5em;
+  }
+  .active{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .active .focused{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .focused{
+    border: 1px solid black;
+    color: black;
+    background-color: orange;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+}
+
+/* styling for smaller screens */
+@media screen and (max-width: 878px){
+  .App {
+    text-align: center;
+  }
+
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-image: url(building.jpg);
+    background-size: cover;
+  }
+  .hidden{
+    display: none;
+  }
+  .tree-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    padding: 1em;
+    list-style:none;
+    margin-bottom: 2em;
+  }
+  .nav-branch{
+    display: flex;
+    color: white;
+    padding: 1em .5em 1em .5em;
+    margin: 0.em;
+    border: 1px solid white;
+    font-size: 1em;
+    font-family: Raleway,sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+  }
+  .branch-focused{
+    text-transform: uppercase;
+  }
+  .branch-active{
+    border: 2px solid white;
+  }
+  .nav-branch .first{
+  padding: .5em;
+
+  }
+  .nav-branch .last{
+  padding: 0.5em;
+
+  }
+  .contact-content{
+    position:relative;
+    height: 90vh;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .contact-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: white;
+    text-align: center;
+  }
+  .contact-item{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .contact-item i{
+    font-size: 1em;
+    padding-right: 1em;
+  }
+  .contact-card{
+    width: 70vw;
+    background-color: orange;
+    border: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+  }
+  .contact-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top: 0.5px solid black;
+    padding: 2em;
+  }
+  .contact-card-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+  }
+  .contact-card-name i{
+    font-size: 3em;
+    color: white;
+  }
+  .work-content{
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+  }
+  .work-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content h1,h2{
+    font-family: 'Exo 2',sans-serif;
+    color: black;
+    padding: 1em;
+  }
+  .work-item{
+    margin: 2em;
+  }
+  .work-item a:link, .work-cotent a:visited, .work-content a:hover{
+    text-decoration: none;
+  }
+  .work-content a img{
+    width:200px;
+    max-height: 240px;
+    cursor: pointer;
+  }
+  .biography{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    color: black;
+  }
+  .bio-content{
+    background-color: black;
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 2em;
+    color: white;
+  }
+  .bio-summary{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #navigator{
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .biography h1,h2,h3{
+    font-family: Montserrat,sans-serif;
+    color: white;
+    padding: 1em;
+  }
+  .details-item{
+    margin:2vh 2vw;
+    padding: 3em 2em;
+    border-bottom: 1px dashed white;
+  }
+  .skill-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    padding:1em;
+  }
+  .skill{
+    margin: .5em;
+    padding: .5em;
+    border: 1px solid red;
+  }
+  .content-main{
+    position:relative;
+    top:10px;
+    width: 70vw;
+    background-color: black;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em;
+    height:auto;
+
+  }
+  .content-main h1,h2{
+    font-family: 'Exo 2',sans-serif;
+  }
+  .content-main h3,h4{
+    font-family: 'Raleway',sans-serif;
+  }
+
+  #humberger{
+    z-index: 10000;
+    position: fixed;
+    top:2.5vh;
+    left:2.5vw;
+    font-size:1.2em;
+    background-color: black;
+  }
+  .nav{
+    z-index: 1000;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    margin: 0 auto;
+    display:none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+  }
+  .nav-item{
+    border: 1px solid white;
+    padding: .3em 0 .3em 0;
+    color: white;
+    cursor: pointer;
+    margin:1em;
+    font-size: 1em;
+    width: 55vw;
+  }
+  .active{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .active .focused{
+    border-bottom: 2px solid white;
+    border-top: 0px solid white;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    padding: .3em 0 .3em 0;
+  }
+  .focused{
+    border: 1px solid black;
+    color: black;
+    background-color: orange;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
 }
