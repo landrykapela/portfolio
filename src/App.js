@@ -14,10 +14,10 @@ class App extends Component {
         <header className="App-header" id="top">
           <Humberger />
           <div className="nav" id="nav">
-            <Menu id="home" text="Home" target="top-title" className="active"/>
-            <Menu id="bio" text="Biography" target="biography-title"/>
-            <Menu id="work" text="Work" target="work-content-title"/>
-            <Menu id="contact" text="Contact" target="contact-content-title"/>
+            <Menu id="home" text="Home" target="top" className="active"/>
+            <Menu id="bio" text="Biography" target="biography"/>
+            <Menu id="work" text="Work" target="work-content"/>
+            <Menu id="contact" text="Contact" target="contact-content"/>
           </div>
           <HelloCard />
         </header>

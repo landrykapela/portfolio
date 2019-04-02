@@ -27,7 +27,7 @@ class Work extends React.Component{
     return (
       <div className="work-content" id="work-content">
 
-        <h1 id="work-content-title">Clients</h1>
+        <h1 id="work-content-title">Projects I've Worked On</h1>
         <div className="work-details">
       {
         this.getClients().map((data)=>(
