@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "0e1eb6dcf4d8bf63153c",
+    "revision": "72b80fa68b33f54377b6",
     "url": "/portfolio/static/css/main.3d206c21.chunk.css"
   },
   {
-    "revision": "0e1eb6dcf4d8bf63153c",
-    "url": "/portfolio/static/js/main.4ab576d5.chunk.js"
+    "revision": "72b80fa68b33f54377b6",
+    "url": "/portfolio/static/js/main.74c8d01d.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "8a8148d5ae20bb5c12c6",
-    "url": "/portfolio/static/js/2.615f9961.chunk.js"
+    "revision": "ded73dc3830fb2d80c34",
+    "url": "/portfolio/static/js/2.b7dd99f8.chunk.js"
   },
   {
     "revision": "56583bdb03823d5e3cd8a78e1e64e33d",
@@ -40,11 +40,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/kakobrands.48187bdc.png"
   },
   {
+    "revision": "f86bfd2e47ab5fe9300b2ff7a823e81f",
+    "url": "/portfolio/static/media/neelansoft.f86bfd2e.png"
+  },
+  {
     "revision": "5e9cdd950d53539a03d228892fc8875a",
     "url": "/portfolio/static/media/building.5e9cdd95.jpg"
   },
   {
-    "revision": "12537eebd016a0456c6ebe13ed01c1b1",
+    "revision": "266e663a9b94905abab0fe756a41aa18",
     "url": "/portfolio/index.html"
   }
 ];
