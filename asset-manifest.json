@@ -1,15 +1,15 @@
 {
-  "main.css": "/portfolio/static/css/main.3d206c21.chunk.css",
-  "main.js": "/portfolio/static/js/main.74c8d01d.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.74c8d01d.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.76d7e65b.chunk.css",
+  "main.js": "/portfolio/static/js/main.0ba3180a.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.0ba3180a.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-  "static/js/2.b7dd99f8.chunk.js": "/portfolio/static/js/2.b7dd99f8.chunk.js",
-  "static/js/2.b7dd99f8.chunk.js.map": "/portfolio/static/js/2.b7dd99f8.chunk.js.map",
+  "static/js/2.7db4e2ac.chunk.js": "/portfolio/static/js/2.7db4e2ac.chunk.js",
+  "static/js/2.7db4e2ac.chunk.js.map": "/portfolio/static/js/2.7db4e2ac.chunk.js.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.b9c009d608372e9cd6872669ad577678.js": "/portfolio/precache-manifest.b9c009d608372e9cd6872669ad577678.js",
+  "precache-manifest.fa1508cdb9f826ee74a6998fa14c7838.js": "/portfolio/precache-manifest.fa1508cdb9f826ee74a6998fa14c7838.js",
   "service-worker.js": "/portfolio/service-worker.js",
-  "static/css/main.3d206c21.chunk.css.map": "/portfolio/static/css/main.3d206c21.chunk.css.map",
+  "static/css/main.76d7e65b.chunk.css.map": "/portfolio/static/css/main.76d7e65b.chunk.css.map",
   "static/media/abc.jpg": "/portfolio/static/media/abc.f6e1c259.jpg",
   "static/media/App.css": "/portfolio/static/media/building.5e9cdd95.jpg",
   "static/media/fk_logo.png": "/portfolio/static/media/fk_logo.56583bdb.png",
@@ -17,5 +17,6 @@
   "static/media/jamirex.jpg": "/portfolio/static/media/jamirex.11f082c5.jpg",
   "static/media/kakobrands.png": "/portfolio/static/media/kakobrands.48187bdc.png",
   "static/media/neelansoft.png": "/portfolio/static/media/neelansoft.f86bfd2e.png",
-  "static/media/ubj.png": "/portfolio/static/media/ubj.a4e7df31.png"
+  "static/media/ubj.png": "/portfolio/static/media/ubj.a4e7df31.png",
+  "static/media/xplore-logo2.jpg": "/portfolio/static/media/xplore-logo2.6fe033a3.jpg"
 }

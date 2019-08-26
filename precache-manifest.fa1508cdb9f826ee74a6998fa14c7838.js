@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "72b80fa68b33f54377b6",
-    "url": "/portfolio/static/css/main.3d206c21.chunk.css"
+    "revision": "20e592532a4daebf3b23",
+    "url": "/portfolio/static/css/main.76d7e65b.chunk.css"
   },
   {
-    "revision": "72b80fa68b33f54377b6",
-    "url": "/portfolio/static/js/main.74c8d01d.chunk.js"
+    "revision": "20e592532a4daebf3b23",
+    "url": "/portfolio/static/js/main.0ba3180a.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "ded73dc3830fb2d80c34",
-    "url": "/portfolio/static/js/2.b7dd99f8.chunk.js"
+    "revision": "9920171e8afcc0ab075b",
+    "url": "/portfolio/static/js/2.7db4e2ac.chunk.js"
   },
   {
     "revision": "56583bdb03823d5e3cd8a78e1e64e33d",
@@ -44,11 +44,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/neelansoft.f86bfd2e.png"
   },
   {
+    "revision": "6fe033a3cb560902adb98ea305c4de75",
+    "url": "/portfolio/static/media/xplore-logo2.6fe033a3.jpg"
+  },
+  {
     "revision": "5e9cdd950d53539a03d228892fc8875a",
     "url": "/portfolio/static/media/building.5e9cdd95.jpg"
   },
   {
-    "revision": "266e663a9b94905abab0fe756a41aa18",
+    "revision": "194e48424706170b37fab57872273f4c",
     "url": "/portfolio/index.html"
   }
 ];
