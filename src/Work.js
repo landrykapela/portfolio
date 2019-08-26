@@ -6,6 +6,7 @@ import jmx from "./assets/jamirex.jpg";
 import itm from "./assets/itm.png";
 import kakobrands from "./assets/kakobrands.png";
 import neelansoft from "./assets/neelansoft.png";
+import xplore from "./assets/xplore-logo2.jpg";
 
 class Work extends React.Component {
   constructor(props) {
@@ -14,6 +15,12 @@ class Work extends React.Component {
     this.populate = this.populate.bind(this);
     this.state = {
       clients: [
+        {
+          id: 7,
+          name: "Xplore Tours",
+          link: "https://xplore.co.tz",
+          image: xplore
+        },
         {
           id: 0,
           name: "FK Law Chambers",
