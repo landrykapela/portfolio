@@ -8,6 +8,7 @@ import kakobrands from "./assets/kakobrands.png";
 import neelansoft from "./assets/neelansoft.png";
 import xplore from "./assets/xplore-logo2.jpg";
 import lawhill from "./assets/lawhill.png";
+import acmate from "./assets/acmate.png";
 
 class Work extends React.Component {
   constructor(props) {
@@ -16,6 +17,12 @@ class Work extends React.Component {
     this.populate = this.populate.bind(this);
     this.state = {
       clients: [
+        {
+          id: 9,
+          name: "Acmate Mobile",
+          link: "https://acmate.neelansoft.co.tz",
+          image: acmate
+        },
         {
           id: 8,
           name: "Lawhill & Co. Advocates",
