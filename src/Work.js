@@ -9,6 +9,7 @@ import neelansoft from "./assets/neelansoft.png";
 import xplore from "./assets/xplore-logo2.jpg";
 import lawhill from "./assets/lawhill.png";
 import acmate from "./assets/acmate.png";
+import care from "./assets/care.png";
 
 class Work extends React.Component {
   constructor(props) {
@@ -17,6 +18,12 @@ class Work extends React.Component {
     this.populate = this.populate.bind(this);
     this.state = {
       clients: [
+	{
+	  id:10,
+	  name:"Care Vehicle Management System",
+	  link: "https://cvms.neelansoft.co.tz:3000",
+	  image: care
+	},
         {
           id: 9,
           name: "Acmate Mobile",
@@ -26,7 +33,7 @@ class Work extends React.Component {
         {
           id: 8,
           name: "Lawhill & Co. Advocates",
-          link: "http://lawhill.co.tz",
+          link: "https://lawhill.co.tz",
           image: lawhill
         },
         {
@@ -62,7 +69,7 @@ class Work extends React.Component {
         {
           id: 4,
           name: "ITM Tanzania Ltd",
-          link: "http://registration.itmafrica.co.tz",
+          link: "https://itm.neelansoft.co.tz",
           image: itm
         },
         {
