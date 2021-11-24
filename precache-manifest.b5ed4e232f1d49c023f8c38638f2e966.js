@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "8fefd4e1eea7f134cf71",
-    "url": "/portfolio/static/css/main.76d7e65b.chunk.css"
+    "revision": "e5a4645e56263eb4afed",
+    "url": "/portfolio/static/css/main.9b483b46.chunk.css"
   },
   {
-    "revision": "8fefd4e1eea7f134cf71",
-    "url": "/portfolio/static/js/main.8f9e66b5.chunk.js"
+    "revision": "e5a4645e56263eb4afed",
+    "url": "/portfolio/static/js/main.fde76fb1.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "5d8926951e33f32be47d",
-    "url": "/portfolio/static/js/2.11e0fe10.chunk.js"
+    "revision": "f2ff0d871c5ffd4b45c0",
+    "url": "/portfolio/static/js/2.2101f4d8.chunk.js"
   },
   {
     "revision": "56583bdb03823d5e3cd8a78e1e64e33d",
@@ -48,8 +48,20 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/xplore-logo2.6fe033a3.jpg"
   },
   {
-    "revision": "a03daac7ee344378e78a421c1cf14d69",
-    "url": "/portfolio/static/media/lawhill.a03daac7.png"
+    "revision": "f8ba5c6482bb161478af4186064e57f4",
+    "url": "/portfolio/static/media/lawhill.f8ba5c64.png"
+  },
+  {
+    "revision": "72abc8857d3a5d8191bce115f7cedf00",
+    "url": "/portfolio/static/media/coat_of_arms.72abc885.png"
+  },
+  {
+    "revision": "c652e56975737dc7cbb905436d88fc68",
+    "url": "/portfolio/static/media/rainbow.c652e569.png"
+  },
+  {
+    "revision": "caac33732e657b0d54cebe2737e5bec9",
+    "url": "/portfolio/static/media/siar_logo.caac3373.png"
   },
   {
     "revision": "1b518be682da70e142901fc76815db79",
@@ -60,11 +72,15 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/care.de2b495f.png"
   },
   {
+    "revision": "50127d6f9f1a38296cfcf650780816c9",
+    "url": "/portfolio/static/media/m.50127d6f.jpg"
+  },
+  {
     "revision": "5e9cdd950d53539a03d228892fc8875a",
     "url": "/portfolio/static/media/building.5e9cdd95.jpg"
   },
   {
-    "revision": "dcc04979530269a260b293477c5f3fab",
+    "revision": "e3ef9e1ac3b89723353e644b3187e37c",
     "url": "/portfolio/index.html"
   }
 ];
