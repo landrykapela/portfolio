@@ -114,7 +114,8 @@
     color: white;
   }
   .work-content {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     margin: 0 auto;
     padding-bottom: 5vh;
     display: flex;
@@ -450,7 +451,8 @@
     justify-content: flex-start;
     align-items: center;
     background-color: white;
-    height: 85vh;
+    height: auto;
+    min-height: 85vh;
   }
   .work-details {
     display: flex;

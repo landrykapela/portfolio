@@ -8,6 +8,9 @@ import kakobrands from "./assets/kakobrands.png";
 import neelansoft from "./assets/neelansoft.png";
 import xplore from "./assets/xplore-logo2.jpg";
 import lawhill from "./assets/lawhill.png";
+import swiofish from "./assets/coat_of_arms.png";
+import rainbow from "./assets/rainbow.png";
+import siar from "./assets/siar_logo.png";
 import acmate from "./assets/acmate.png";
 import care from "./assets/care.png";
 
@@ -18,10 +21,28 @@ class Work extends React.Component {
     this.populate = this.populate.bind(this);
     this.state = {
       clients: [
+        {
+          id:13,
+          name:"Fisheries Groups Management System",
+          link: "https://swiofish.equitan.or.tz:3000",
+          image: swiofish
+        },
+        {
+          id:12,
+          name:"Rainbow Inventory Tracking System",
+          link: "https://mak-david.com",
+          image: rainbow
+        },
+        {
+          id:11,
+          name:"Criminal Registry (Build for SDG Challenge)",
+          link: "https://siar-sdg.herokuapp.com",
+          image: siar
+        },
 	{
 	  id:10,
 	  name:"Care Vehicle Management System",
-	  link: "https://cvms.neelansoft.co.tz:3000",
+	  link: "https://cvms.care-tanzania.org:3000",
 	  image: care
 	},
         {
@@ -45,7 +66,7 @@ class Work extends React.Component {
         {
           id: 0,
           name: "FK Law Chambers",
-          link: "https://fklawchambers.co.tz",
+          link: "http://fklawchambers.co.tz",
           image: fk
         },
         {
@@ -57,7 +78,7 @@ class Work extends React.Component {
         {
           id: 2,
           name: "UBJ Law Chamber",
-          link: "http://ubjlawchamber.co.tz",
+          link: "https://ubjlawchamber.co.tz",
           image: ubj
         },
         {
@@ -69,7 +90,7 @@ class Work extends React.Component {
         {
           id: 4,
           name: "ITM Tanzania Ltd",
-          link: "https://itm.neelansoft.co.tz",
+          link: "https://itmafrica.co.tz",
           image: itm
         },
         {
